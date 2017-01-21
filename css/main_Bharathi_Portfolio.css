@@ -1,0 +1,173 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  color: #e3fae0;
+  text-align: center;
+  background: green;
+  background: -webkit-radial-gradient( rgba(109, 171, 68, 0.92), #fff);
+  background: -o-radial-gradient(rgba(109, 171, 68, 0.92), #fff);
+  background: -moz-radial-gradient(rgba(109, 171, 68, 0.92), #fff);
+  background: radial-gradient(rgba(109, 171, 68, 0.92), #fff);
+}
+
+hr {
+  display: block;
+  width: 100%;
+  border: 0;
+  background-color: #fae0f5;
+  height: 1px;
+}
+
+img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  color: white;
+}
+
+.container {
+  margin: 50px auto;
+  padding-bottom: 10px;
+  background: #333;
+  background: -webkit-radial-gradient(#c0c0c0, black);
+  background: -o-radial-gradient(#c0c0c0, black);
+  background: -moz-radial-gradient(#c0c0c0, black);
+  background: radial-gradient(#c0c0c0, black);
+}
+
+.text-thin {
+  font-weight: 400;
+}
+
+.title-super {
+  font-size: 40px;
+}
+
+.title-logo {
+  margin: 0;
+  font-size: 5em;
+  text-align: left;
+}
+
+.project-box {
+  margin-top: 40px;
+}
+
+h2 {
+  margin: 50px 0 -20px;
+}
+
+.text-center{
+  text-align: center;
+  margin-top: -15px;
+}
+
+.text-center p {
+  margin-top: -10px;
+}
+
+.text-muted {
+  color: #5a5858;
+  text-shadow: 2px 1px 5px white;
+}
+
+/*light border on hover for elements with a modal*/
+.img-responsive.project:hover,
+h1:hover {
+  box-shadow: 0 0 0 1px #fae0f5;
+}
+
+.modal-gradient {
+  background: green;
+  background: -webkit-linear-gradient(rgba(109, 171, 68, 0.92), #fff);
+  background: -o-linear-gradient(rgba(109, 171, 68, 0.92), #fff);
+  background: -moz-linear-gradient(rgba(109, 171, 68, 0.92), #fff);
+  background: linear-gradient(rgba(109, 171, 68, 0.92), #fff);
+  color: black;
+}
+
+.modal_image {
+  width: 20vw;
+}
+
+#modal_Bharathi,
+#modal_one,
+#modal_two,
+#modal_three {
+  font-size: 2.5em;
+}
+
+.modal-body p {
+  font-size: 1.35em;
+  padding-top: 1em;
+}
+
+.btn {
+  color: hsl(0.0, 0.0%, 96.1%);
+}
+
+footer {
+  padding-top: 50px;
+}
+
+/* social icons */
+[class*="entypo-"]:before {
+  color: white;
+  display: inline-block;
+  font-family: 'entypo', sans-serif;
+  font-size: 2em;
+  text-shadow: 3px 3px 3px #aea04b;
+  width: 1.5em;
+}
+
+/* main image carousel */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out 3s;
+  left: 0;
+  opacity: 0; /* hide all slides */
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 1; /* show first slide */
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+.carousel:hover {
+  box-shadow: 0 0 0 1px #fae0f5;
+  -webkit-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/*media queries */
+@media only screen and (min-width: 0) and (max-width: 990px) {
+  .container {
+    width: 90vw;
+  }
+
+  .project {
+    width: 50vw;
+  }
+}
